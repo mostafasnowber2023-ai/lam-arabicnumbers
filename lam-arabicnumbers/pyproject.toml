@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lam-arabicnumbers"
+version = "2.0.2"
+description = "تحويل الأرقام إلى كلمات عربية بدقة نحوية (تفقيط) - Arabic Numbers to Words with high grammatical accuracy"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+    { name = "Mostafa Snowber", email = "mostafa.snowber.2023@gmail.com" }
+]
+keywords = [
+    "arabic", "numbers", "tafqeet", "تفقيط", "عربي",
+    "currency", "ordinal", "date", "time",
+    "number-to-words", "arabic-numbers",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: Arabic",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: Linguistic",
+]
+
+[project.urls]
+Homepage = "https://github.com/mostafasnowber2023-ai/lam-arabicnumbers"
+Repository = "https://github.com/mostafasnowber2023-ai/lam-arabicnumbers"
+Issues = "https://github.com/mostafasnowber2023-ai/lam-arabicnumbers/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/lam_arabicnumbers"]
